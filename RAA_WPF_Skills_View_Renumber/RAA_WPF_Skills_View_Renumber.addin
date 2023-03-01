@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RAA_WPF_Skills_View_Renumber</Text>
+    <Description>Some description for RAA_WPF_Skills_View_Renumber</Description>
+    <Assembly>RAA_WPF_Skills_View_Renumber.dll</Assembly>
+    <FullClassName>RAA_WPF_Skills_View_Renumber.Command</FullClassName>
+    <ClientId>a6de6993-6773-4428-a510-67712e228fe3</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RAA_WPF_Skills_View_Renumber</Name>
+    <Assembly>RAA_WPF_Skills_View_Renumber.dll</Assembly>
+    <FullClassName>RAA_WPF_Skills_View_Renumber.App</FullClassName>
+    <ClientId>b69633c5-f05d-4334-8de1-748703e63cbf</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>

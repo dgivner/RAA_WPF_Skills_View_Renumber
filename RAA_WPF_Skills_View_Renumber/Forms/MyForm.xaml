@@ -1,0 +1,34 @@
+﻿<Window x:Class="RAA_WPF_Skills_View_Renumber.MyForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RAA_WPF_Skills_View_Renumber"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="600">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="View Renumbering" Grid.Row="0" FontWeight="Bold" FontSize="24" VerticalAlignment="Center" />
+        <Label Content="Click 'Select' Then Pick Views to Renumber in Order:" Grid.Row="1" FontWeight="Bold" />
+        <ListBox x:Name="lbxElements" Grid.Row="2" Grid.Column="0" />
+        <Button x:Name="btnSelect" Content="Select" Grid.Row="2" Grid.Column="1" Height="30" VerticalAlignment="Top" Margin="10,0,0,0" Click="btnSelect_Click"/>
+        <Label Content="Select View Start Number" Grid.Row="3" FontWeight="Bold" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="cmbNumber" Grid.Row="4" Grid.Column="0" />
+        <StackPanel Grid.Row="5" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnOK" Content="OK" Width="90" Height="30" Margin="0,0,10,0" Click="btnOK_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" Width="90" Height="30" Click="btnCancel_Click"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
